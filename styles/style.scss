@@ -19,9 +19,9 @@ body {
 main {
   @include flex;
   position: fixed;
-  top: 15%;
+  top: 25%;
   width: 450px;
-  height: 60vh;
+  height: 45vh;
   border-radius: 25px;
   background-color: hsl(214, 21%, 16%);
 }
@@ -44,14 +44,14 @@ main {
     font-size: 1.5rem;
     color: hsl(0, 0%, 100%);
     position: relative;
-    bottom: 50px;
+    bottom: 40px;
   }
 
   p {
     font-size: 1rem;
     color: hsl(217, 12%, 63%);
     position: relative;
-    bottom: 35px;
+    bottom: 30px;
   }
 }
 
