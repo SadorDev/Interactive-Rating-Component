@@ -22,6 +22,7 @@
   <main class="container">
 
     <form id="form_container">
+
       <div class="star_container">
         <img src="images/icon-star.svg" alt="star">
       </div>
@@ -34,25 +35,24 @@
 
       <div class="rating_container">
 
-        <input type="radio" id="rating_one" name="rating_group">
-        <label for="rating_one">1</label>
+        <input type="radio" id="rating_one" name="rating_group" placeholder="1">
+        <label for="rating_one"></label>
         <input type="radio" id="rating_two" name="rating_group">
-        <label for="rating_two">2</label>
+        <label for="rating_two"></label>
         <input type="radio" id="rating_three" name="rating_group">
-        <label for="rating_three">3</label>
+        <label for="rating_three"></label>
         <input type="radio" id="rating_four" name="rating_group">
-        <label for="rating_four">4</label>
+        <label for="rating_four"></label>
         <input type="radio" id="rating_five" name="rating_group">
-        <label for="rating_five">5</label>
+        <label for="rating_five"></label>
       </div>
-      <button id="submit" class="submit">Submit</button>
+
+      <div class="button_container">
+        <button id="submit" class="submit">Submit</button>
+      </div>
 
     </form>
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
+    
     <section hidden>
       <img src="images\illustration-thank-you.svg" alt="illustration">
       <p>You selected <!-- Add rating here --> out of 5</p>
