@@ -38,19 +38,21 @@ main {
 
 .text_container {
   width: 90%;
+  margin: 0 35px 0 35px;
 }
 .text_container h1 {
   font-size: 1.5rem;
+  font-weight: 600;
   letter-spacing: 2px;
   color: hsl(0, 0%, 100%);
   position: relative;
   bottom: 30px;
 }
 .text_container p {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: hsl(217, 12%, 63%);
   position: relative;
-  bottom: 8px;
+  bottom: 10px;
 }
 
 .rating_container {
@@ -59,9 +61,10 @@ main {
   align-items: center;
   flex-direction: row;
   position: absolute;
-  margin-top: 200px;
+  gap: 15px;
+  margin-top: 150px;
 }
-.rating_container input[type=radio] {
+.rating_container label {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -69,13 +72,13 @@ main {
   width: 4.15em;
   height: 4.15em;
   border-radius: 50%;
-  accent-color: hsl(214, 21%, 16%);
+  color: hsl(217, 12%, 63%);
 }
-.rating_container input::-moz-placeholder {
-  color: white;
-}
-.rating_container input::placeholder {
-  color: white;
+.rating_container span {
+  display: flex;
+  justify-content: center;
+  top: 20px;
+  position: relative;
 }
 
 .button_container {
@@ -88,7 +91,7 @@ main {
   position: relative;
   top: 150px;
   width: 90%;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 10px;
   text-align: center;
   border: none;
