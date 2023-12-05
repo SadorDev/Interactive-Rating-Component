@@ -5,7 +5,7 @@
   font-family: "Overpass", sans-serif;
 }
 
-:rppt {
+:root {
   accent-color: hsl(214, 21%, 16%);
 }
 
@@ -23,21 +23,21 @@ main {
   position: fixed;
   top: 25%;
   max-width: 400px;
-  height: 45vh;
+  height: 50vh;
   border-radius: 25px;
   background-color: hsl(214, 21%, 16%);
 }
 
 .star_container {
   position: absolute;
-  top: 40px;
-  left: 30px;
+  top: 50px;
+  left: 50px;
   border: 15px solid hsl(213, 19%, 20%);
   border-radius: 90px;
+  transform: translate(-50%, -50%);
 }
 
 .text_container {
-  width: 90%;
   margin: 0 35px 0 35px;
 }
 .text_container h1 {
@@ -46,35 +46,44 @@ main {
   letter-spacing: 2px;
   color: hsl(0, 0%, 100%);
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
 }
 .text_container p {
-  font-size: 1.15rem;
+  font-size: 15px;
   color: hsl(217, 12%, 63%);
   position: relative;
-  bottom: 10px;
+  bottom: 25px;
 }
 
 .rating_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   position: absolute;
-  gap: 15px;
+  gap: 10px;
   margin-top: 150px;
 }
+.rating_container input[type=radio] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
 .rating_container label {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background-color: hsl(213, 19%, 20%);
   width: 4.15em;
   height: 4.15em;
   border-radius: 50%;
   color: hsl(217, 12%, 63%);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
-.rating_container span {
+.rating_container label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  transform: scale(1.1);
+}
+.rating_container label span {
   display: flex;
   justify-content: center;
   top: 20px;
@@ -89,15 +98,25 @@ main {
 }
 .button_container .submit {
   position: relative;
-  top: 150px;
-  width: 90%;
+  top: 75px;
+  width: 100%;
   font-size: 1rem;
-  padding: 10px;
+  padding: 12px 20px;
   text-align: center;
   border: none;
   border-radius: 30px;
   color: white;
   background-color: hsl(25, 97%, 53%);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.button_container .submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+section {
+  display: none;
 }
 
 footer {
