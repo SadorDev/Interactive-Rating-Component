@@ -81,7 +81,7 @@ main {
 .rating_container label:hover {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .rating_container label span {
   display: flex;
@@ -98,8 +98,8 @@ main {
 }
 .button_container .submit {
   position: relative;
-  top: 75px;
-  width: 100%;
+  top: 150px;
+  width: 90%;
   font-size: 1rem;
   padding: 12px 20px;
   text-align: center;
