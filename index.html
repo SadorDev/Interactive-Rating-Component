@@ -12,60 +12,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
-
-
 </head>
 
 <body>
-
-  <!-- Rating state start -->
   <main class="container">
-
-    <div class="star_container">
+    <header class="star_container">
       <img src="images/icon-star.svg" alt="star">
-    </div>
+    </header>
 
-    <div class="text_container">
+    <article class="text_container">
       <h1>How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!</p>
-    </div>
+    </article>
 
     <form class="rating_container">
-      <input type="radio" hidden id="rating_one" name="rating_group">
+      <input type="radio" id="rating_one" name="rating_group">
       <label for="rating_one"><span>1</span></label>
 
-      <input type="radio" hidden id="rating_one" name="rating_group">
-      <label for="rating_one"><span>2</span></label>
+      <input type="radio" id="rating_two" name="rating_group">
+      <label for="rating_two"><span>2</span></label>
 
-      <input type="radio" hidden id="rating_one" name="rating_group">
-      <label for="rating_one"><span>3</span></label>
+      <input type="radio" id="rating_three" name="rating_group">
+      <label for="rating_three"><span>3</span></label>
 
-      <input type="radio" hidden id="rating_one" name="rating_group">
-      <label for="rating_one"><span>4</span></label>
+      <input type="radio" id="rating_four" name="rating_group">
+      <label for="rating_four"><span>4</span></label>
 
-      <input type="radio" hidden id="rating_one" name="rating_group">
-      <label for="rating_one"><span>5</span></label>
-      
-  
+      <input type="radio" id="rating_five" name="rating_group">
+      <label for="rating_five"><span>5</span></label>
+
+      <div class="button_container">
+        <button id="submit" class="submit">Submit</button>
+      </div>
     </form>
 
-
-    <div class="button_container">
-      <button id="submit" class="submit">Submit</button>
-    </div>
-
-
-    <section hidden>
+    <section id="thank-you-section" >
       <img src="images\illustration-thank-you.svg" alt="illustration">
       <p>You selected <!-- Add rating here --> out of 5</p>
       <h1>Thank you! </h1>
       <p>We appreciate you taking the time to give a rating. If you ever need more support,
         don’t hesitate to get in touch!</p>
     </section>
-
   </main>
-  <!-- Thank you state end -->
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
