@@ -32,7 +32,7 @@ main {
 .star_container {
   position: relative;
   margin-top: 20px;
-  margin-right: 13em;
+  margin-right: 15em;
   border: 15px solid hsl(213, 19%, 20%);
   border-radius: 90px;
   transform: translate(-50%, -50%);
