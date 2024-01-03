@@ -1,3 +1,4 @@
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,70 +10,88 @@
   accent-color: hsl(214, 21%, 16%);
 }
 
+/* Mixin for Flexbox */
 @mixin flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Body Styles */
 body {
   @include flex;
-  min-height: 100vh;
   background-color: hsl(216, 12%, 8%);
 }
 
+/* Main Container Styles */
 main {
-  @include flex;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 23.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  padding: 25px;
-  border-radius: 25px;
+  border-radius: 1.8rem;
   background-color: hsl(214, 21%, 16%);
 }
 
+/* Star Container Styles */
 .star_container {
+  display: flex;
+  align-items: center;
   position: relative;
-  margin-top: 20px;
-  margin-right: 15em;
-  border: 15px solid hsl(213, 19%, 20%);
-  border-radius: 90px;
-  transform: translate(-50%, -50%);
+  margin: 20px 0 0 1.5rem;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  background-color: hsl(213, 19%, 20%);
+  max-width: 11.5%;
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 1.2vh;
+  }
 }
 
-.text_container {
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: hsl(0, 0%, 100%);
-  }
+/* Text Container Styles */
+.container {
+  height: 23.5rem;
+
+  h2 {
+    font-weight: 700;
+    color: white;
+    // font-size: 1.65rem;
+    margin: 1.6rem 0rem 0rem 27px;
+  }  
 
   p {
-    font-size: 15px;
-    color: hsl(217, 12%, 63%);
-    margin-bottom: 20px;
+    color: grey;
+    font-size: 0.938rem;
+    margin: 1rem 0 1rem 1.8rem;
   }
 }
 
+/* Rating Container Styles */
 .rating_container {
   @include flex;
   flex-direction: column;
+  // gap: 1.5rem;
+  margin-top: 10px;
 
   .labels {
     @include flex;
-    gap: 7px;
-
-    input[type="radio"] {
-      display: none;
-      width: 0;
-      height: 0;
-    }
+    gap: 1.4em;
 
     label {
+      display: grid;
+      place-content: center;
       background-color: hsl(213, 19%, 20%);
-      width: 3.75em;
-      height: 3.75em;
+      width: 2.8em;
+      height: 2.8em;
       border-radius: 50%;
       color: hsl(217, 12%, 63%);
       transition: background-color 0.3s ease, color 0.3s ease,
@@ -84,30 +103,23 @@ main {
         color: hsl(0, 0%, 100%);
         transform: scale(1.1);
       }
-
-      span {
-        display: flex;
-        justify-content: center;
-        top: 20px;
-        position: relative;
-      }
     }
   }
 }
 
+/* Button Container Styles */
 .button_container {
   @include flex;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
 
   .submit {
-    width: 100%;
-    max-width: 400px;
-    font-size: 1rem;
-    padding: 12px 20px;
-    text-align: center;
+    width: 83%;
+    padding: 0.8rem;
+    margin-bottom: 15px;
     border: none;
-    border-radius: 30px;
+    letter-spacing: 0.15rem;
+    border-radius: 2em;
     color: white;
     background-color: hsl(25, 97%, 53%);
     transition: background-color 0.3s ease;
@@ -120,9 +132,13 @@ main {
   }
 }
 
-// Thank You Section
+/* Thank You Section Styles */
 #thank-you-section {
-  justify-content: center;
+  @include flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: left; 
   display: none;
 
   img {
@@ -141,21 +157,26 @@ main {
   h1,
   p {
     @include flex;
+    flex-direction: column; 
     justify-content: center;
     margin-top: 20px;
     text-align: center;
   }
-
+  
   h1 {
     color: hsl(0, 0%, 100%);
   }
-
+  
   p {
     color: hsl(216, 12%, 54%);
+    position: relative;
+    left: -0.9rem;
   }
 }
 
-// Footer
+
+
+/* Footer Styles */
 footer {
   position: fixed;
   bottom: 1rem;
